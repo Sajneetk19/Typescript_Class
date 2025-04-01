@@ -1,3 +1,27 @@
-const message = "Hello";
+const obj = {
+    name: "John"
+}
 
-// message()
+const arr =[];
+
+console.log(obj.name.toLowerCase())
+console.log(arr.length);
+
+function flipCoin() {
+    // Meant to be Math.random()
+    return Math.random() < 0.5;
+}
+
+const value = Math.random() < 0.5 ? "a" : "b";
+if (value === "a") {
+    value
+  // ...
+} else if (value === "b") {
+  // Oops, unreachable
+}
+
+function greet(person: string, date: Date) {
+    console.log(`Hello ${person}, today is ${date}!`);
+  }
+   
+  greet("Brendan", new Date());
